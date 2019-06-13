@@ -1,0 +1,25 @@
+# Using this convenient image which uses Node.js as a base
+image: alekzonder/puppeteer:latest
+
+# This folder is cached between builds for faster runs
+# http://docs.gitlab.com/ce/ci/yaml/README.html#cache
+cache:
+  paths:
+    - node_modules/
+
+stages:
+  - prepare
+  - golive
+
+setup:
+  stage: prepare
+  script:
+    - npm install
+
+golive:
+  stage: golive
+  script:
+    - npm run start
+  artifacts:
+    paths:
+      - screenshot

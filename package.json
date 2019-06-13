@@ -1,0 +1,39 @@
+{
+  "name": "watch_faker",
+  "version": "1.0.0",
+  "engines": {
+    "node": "10.x",
+    "npm": "6.x"
+  },
+  "description": "A faker watcher for pluralsight videos",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "EMAIL=$EMAIL PASSWORD=$PASSWORD WATCHURL=$WATCHURL node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codekeyz/fake-watcher.git"
+  },
+  "keywords": [
+    "faker",
+    "watcher",
+    "fake-watcher",
+    "puppeter",
+    "pluralsight",
+    "automation"
+  ],
+  "author": "Precious Keyz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codekeyz/fake-watcher/issues"
+  },
+  "homepage": "https://github.com/codekeyz/fake-watcher#readme",
+  "dependencies": {
+    "puppeteer": "^1.17.0"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^1.17.0",
+    "cross-env": "^5.2.0"
+  }
+}
